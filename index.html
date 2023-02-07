@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index page</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: rgba(168, 151, 151, 0.2);
+        /* background-color: yellow; */
+    }
+
+    .main_box {
+        border-radius: 30px 5px;
+        display: flex;
+        justify-content: space-around;
+        /* padding-top: 50px; */
+        margin-top: 10%;
+    }
+
+    .choose {
+        width: 30%;
+        border-radius: 25px 5px;
+        /* background-color: black; */
+        background-color: rgba(197, 194, 194, 0.2);
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .choose input {
+        /* width: 30%; */
+        padding: 14px;
+        border: none;
+        border-radius: 9px;
+    }
+
+    .choose button {
+        width: 40%;
+        padding: 13px;
+        margin: 8px;
+        border: none;
+        border-radius: 9px;
+        cursor: pointer;
+        background-color: white;
+    }
+
+    .about {
+        background-color: rgba(197, 194, 194, 0.2);
+        width: 50%;
+        height: 50vh;
+        border-radius: 25px 5px;
+    }
+    .about .info {
+        padding: 18px;
+    }
+    .about .info h1, h2 {
+        border-bottom: 1px solid;
+    }
+    .about .info ul{
+        padding-left: 18px;
+    }
+</style>
+
+<body>
+    <section class="section1">
+        <div class="main_box">
+            <div class="choose">
+                <input type="text" placeholder="Enter your name">
+                <button>SERVER1</button>
+                <button>SERVER2</button>
+                <button>SERVER3</button>
+                <button>SERVER4</button>
+                <button>SERVER5</button>
+            </div>
+            <div class="about">
+                <div class="info">
+                    <h1>What we Provide :</h1> <br>
+                    <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, officia.</h4>
+                    <br><br>
+                    <h2>Quick Tips :</h2> <br>
+                    <ul>
+                    <li><h4>Pick a random name. (try not to use your actual name)</h4></li> <br>
+                    <li><h4>Select a server of your choice.</h4></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

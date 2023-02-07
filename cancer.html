@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    .section1 {
+        background-color: rgba(0, 0, 0, 0.6);
+        display: inline-grid;
+        /* display: flex; */
+        justify-content: space-between;
+        /* grid-template-columns: repeat(4, 1fr); */
+        grid-template-columns: [first] 80px [line2] 180px [line3] 800px [line4] 305px;
+        /* column-gap: 2px; */
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .navigation {
+        /* background-color: red; */
+        /* border-right: 1px solid; */
+        width: 100%;
+        height: 100%;
+        color: white;
+    }
+
+    .servers {
+        /* background-color: pink; */
+        background-color: rgba(0, 0, 0, 0.7);
+        /* border-right: 1px solid; */
+        width: 100%;
+        height: 100vh;
+        color: white;
+    }
+
+    .chatScreen {
+        /* background-color: yellow; */
+        /* border-right: 1px solid; */
+        width: 100%;
+        height: 100vh;
+        color: white;
+    }
+
+    .aboutServer {
+        /* background-color: orange; */
+        /* border-right: 1px solid; */
+        width: 100%;
+        height: 100vh;
+        color: white;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0 10px 0;
+        margin: 10px;
+    }
+
+    .icons a {
+        padding: 10px 0;
+        color: white;
+        text-decoration: none;
+    }
+    .icons a:hover {
+        background-color: rgb(149, 149, 150);
+        opacity: 0.9;
+    }
+    .chatScreen h2 {
+        padding: 10px;
+        padding-top: 23px;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .chatScreen .chat_box {
+        position: absolute;
+        bottom: 10px;
+    }
+    .chat_box input {
+        width: 730px;
+        border-radius: 20px;
+        border: none;
+        padding: 13px;
+        margin: 0 5px;
+    }
+    .servers h3 {
+        font-size: 20px;
+        text-transform: capitalize;
+        padding: 8px 5px 2px;
+        margin-top: 20px;
+    }
+
+    .servers .serverName {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 10px 0;
+    }
+    .serverName h4:hover {
+        background-color: rgb(149, 149, 150);
+        opacity: 0.9;
+    }
+
+    .servers .serverName h4 {
+        /* z-index: 100; */
+        width: 100%;
+        cursor: pointer;
+        /* background-color: aqua; */
+        /* border: 1px solid black; */
+        text-transform: capitalize;
+        font-size: 16px;
+        padding: 10px;
+    }
+    .aboutServer {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .aboutServer h2 {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding-top: 20px;
+        padding-bottom: 13px;
+    }
+    .aboutServer .outer_box {
+        background-color: rgba(0, 0, 0, 0.3);
+        /* background-color: aquamarine; */
+        border-radius: 12px;
+        width: 90%;
+        position: relative;
+        top: 30%;
+        left: 10px;
+        /* transform: translate(-50%, -50%); */
+    }
+    .outer_box .container {
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 20px 5px;
+    }
+    .outer_box .container h3 {
+        font-size: 22px;
+        padding-bottom: 5px;
+        margin-bottom: 6px;
+        border-bottom: 1px solid white;
+    }
+    .outer_box .container h4 {
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <section class="section1" id="home">
+            <!-- <a href="#" class="logo" onclick="myFunction()">Health Care App</a> -->
+            <!-- <i class="fa fa-bars" onclick="showMenu()"></i> -->
+            <nav class="navigation">
+                <div class="nav-Links" id="navLinks">
+                    <div class="icons">
+                        <a href="#home" target=""><i class="fa fa-home"></i>home</a>
+                        <a href="#inbox" target=""><i class="fa fa-question-circle-o"></i>inbox</a>
+                        <a href="#questions" target=""><i class="fa fa-phone"></i>questions</a>
+                        <a href="#profile" target=""><i class="fa fa-user-o"></i>profile</a>
+                    </div>
+                    <!-- <div class="line"></div>
+                <div class="line2"></div> -->
+                </div>
+            </nav>
+            <div class="servers">
+                <h3>Cancer</h3>
+                <div class="serverName">
+                    <h4>Room 1</h4>
+                    <h4>Room 2</h4>
+                    <h4>Room 3</h4>
+                    <h4>Room 4</h4>
+                </div>
+            </div>
+            <div class="chatScreen">
+                <h2>Room 1</h2>
+                <div class="chat_box">
+                    <input type="text" placeholder="write something">send
+                </div>
+            </div>
+            <div class="aboutServer">
+                <center><h2>About Server</h2></center>
+                <div class="outer_box">
+                    <div class="container">
+                        <h3>Server Name</h3>
+                        <h4>About Server</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <br>
+                        <h4>server created</h4>
+                        <p>date/month/year</p>
+                        <br>
+                        <h4>short description</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- <section class="section2"></section>
+    <section class="section3"></section>
+    <section class="section4"></section> -->
+</body>
+
+</html>
